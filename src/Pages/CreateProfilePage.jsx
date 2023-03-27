@@ -11,8 +11,8 @@ function CreateProfilePage() {
     <nav>
       <Navbar/>  
     </nav>
-    <div className="container-fluid d-flex 3fr 9fr">
-      <Sidebar/>
+    <div className="container-fluid d-flex 3fr 9fr p-3">
+      <Sidebar className="bg-light"/>
       <CreateProfile />  
     </div>
 

@@ -3,14 +3,14 @@ import {BsPersonCircle} from "react-icons/bs";
 
 function CreateProfile() {
   return (
-    <div className="container">
+    <div className="form-container">
         <form action="">
             <header>
                 <h2>Cuenta</h2>
                 <p>Por favor llena la informacion de tu cuenta</p>
             </header>
             <div className="foto-container">
-                <h3>Foto de perfil</h3>
+                <h6>Foto de perfil</h6>
                 <div className="foto-container">
                 <i><BsPersonCircle/></i>
                 <br />
@@ -18,16 +18,47 @@ function CreateProfile() {
             </div>            
             
             <div className="info-personal">
-                <h5>
+                <h6>
                     Informacion Personal
-                </h5>
+                </h6>
                 <p>Nombre completo</p>
                 <input type="text" name="nombre-completo" id="" placeholder='Nombre y Apellidos'/>
                 <p>Email</p>
-                <input type="email" placeholder='correo@dominio.com' />
+                <p>unemail@dominio.com</p>
+                <br />
+                <br />
                 <p>Contraseña</p>
-                <button>Cambiar Contraseña</button>
+                <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+            <p>Vieja contraseña</p>
+            <input type="password" name="" id="" />
+
+            <p>Nueva contraseña</p>
+            <input type="password" name="" id="" />
+
+            <p>Confirmar contraseña</p>
+            <input type="password" name="" id="" />
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="/" data-bs-toggle="modal" data-bs-target="#exampleModal">Cambiar contraseña</a>
             </div>
+
+
 
             <div className="info-restaurante">
                 <h2>Restaurante</h2>
