@@ -17,7 +17,7 @@ function CreateProfilePage() {
     </div>
 
      
-    <footer>
+    <footer className='container-fluid d-flex 3fr 3fr 3fr 3fr'>
       <Footer/>
     </footer>
   </>

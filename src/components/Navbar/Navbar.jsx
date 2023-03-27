@@ -1,4 +1,6 @@
 import React from 'react'
+import {AiOutlineSetting} from "react-icons/ai";
+import {BiExit} from "react-icons/bi"
 
 function Navbar() {
   return (
@@ -34,8 +36,8 @@ function Navbar() {
                     Nombre
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="/">Ajustes de la cuenta</a></li>
-                    <li><a href="/">Cerrar session</a></li>
+                    <li><a href="/">Ajustes de la cuenta <i><AiOutlineSetting/></i></a></li>
+                    <li><a href="/">Cerrar session <i><BiExit/></i> </a></li>
                 </ul>
             </div>
         </a>
