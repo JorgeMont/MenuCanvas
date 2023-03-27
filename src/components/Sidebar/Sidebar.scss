@@ -1,0 +1,29 @@
+aside {
+    padding-left: .10rem;
+    width: 20%;
+    height: 50vh;
+    border: 1px solid black;
+    ul{
+        line-height: 3rem;
+        
+        li{
+
+            list-style: none;
+            a{
+                i{
+                    padding-right: 1rem;
+                    &:hover{
+                         border-right: 1px solid black;
+                    }
+                }
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: blue;
+                    font-size: larger;
+                }
+            }
+
+        }
+    }
+}
