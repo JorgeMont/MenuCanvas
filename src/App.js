@@ -1,10 +1,11 @@
 
 import './App.scss';
-import CreateProfilePage from './Pages/CreateProfilePage';
+import ModalUserRegistrationPage from './Pages/ModalUserRegistrationPage';
+
 
 function App() {
   return <>
-    <CreateProfilePage/>
+    <ModalUserRegistrationPage/>
   </>
 }
 
