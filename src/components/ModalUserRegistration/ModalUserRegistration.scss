@@ -1,3 +1,9 @@
+#modalPageExample{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
 #complete-modal{
     border-radius: none;
     width: 350px;
@@ -31,7 +37,18 @@
                 flex-direction: row;
                 justify-content: space-between;
                 width: 125px;
+                list-style: none;
+                margin-left: -2rem;
+                li i{
+                    font-size: 35px;
+                }
             }
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 25px;
+            
         }
     }
 }

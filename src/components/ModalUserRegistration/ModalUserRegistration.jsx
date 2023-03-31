@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
-
+import {SiGmail} from "react-icons/si";
+import {GrFacebook} from "react-icons/gr";
 
 function ModalUserRegistration() {
     const [show, setShow] = useState(false);
@@ -72,14 +73,14 @@ function ModalUserRegistration() {
             </Form>
             </Modal.Body>
             <Modal.Footer id="modal-footer">
-            <Button variant="primary" onClick={handleClose}>
+            <Button variant="primary" onClick={handleClose} id="registrar-btn">
                 Registrar
             </Button>
             <p>O registrate con</p>
             <div className="modal-footer-images">
                 <ul>
-                    <li><a href="/">GM</a></li>
-                    <li><a href="/">FB</a></li>
+                    <li><a href="/"> <i><SiGmail/></i> </a></li>
+                    <li><a href="/"> <i><GrFacebook/></i> </a></li>
                 </ul>
             </div>
             <a href="/">Iniciar Sesion</a>
