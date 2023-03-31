@@ -1,0 +1,37 @@
+#complete-modal{
+    border-radius: none;
+    width: 350px;
+    border: 2px solid black;
+    #modal-title{
+        margin-left: 3.5rem;
+    }
+    #modal-input{
+        border-radius: 0;
+        width: 200px;
+        margin-left: 3.5rem;
+        margin-bottom: -1.5rem;
+    }
+    #correo{
+        border-radius: 0;
+    }
+    #contraseña{
+        border-radius: 0;
+    }
+    #confirmar-contraseña{
+        border-radius: 0;
+    }
+    #modal-footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .modal-footer-images{
+            display: flex;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 125px;
+            }
+        }
+    }
+}
