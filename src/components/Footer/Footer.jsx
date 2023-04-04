@@ -2,6 +2,7 @@ import React from 'react';
 import {BsFacebook} from "react-icons/bs";
 import {AiFillTwitterCircle} from "react-icons/ai";
 import {MdEmail} from "react-icons/md";
+import './Footer.scss';
 
 function Footer() {
   return (

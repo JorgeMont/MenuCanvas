@@ -1,13 +1,14 @@
 import React from 'react'
 import {AiOutlineSetting} from "react-icons/ai";
 import {BiExit} from "react-icons/bi"
+import Logo from '../../Assets/logo.png';
 
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
   <a class="navbar-brand" href="/home">
-    <img src="https://picsum.photos/200"  alt="logo" />
+    <img src={Logo}  alt="logo" />
     MenuCanvas
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
