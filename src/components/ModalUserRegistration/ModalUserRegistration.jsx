@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
-
+import {SiGmail} from "react-icons/si";
+import {GrFacebook} from "react-icons/gr";
 
 function ModalUserRegistration() {
     const [show, setShow] = useState(false);
@@ -15,37 +16,75 @@ function ModalUserRegistration() {
             Launch demo modal
         </Button>
 
-        <Modal show={show} onHide={handleClose} dialogClassName="modal-90vw">
+        <Modal show={show} onHide={handleClose} dialogClassName="modal-90vw" id="complete-modal">
             <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title><h3 id="modal-title">Crear Cuenta</h3></Modal.Title>
             </Modal.Header>
             <Modal.Body>
             <Form>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label></Form.Label>
+                <Form.Control
+                    type="text"
+                    placeholder="Nombre Completo"
+                    autoFocus
+                    id="modal-input"
+                />
+
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
+                <Form.Label></Form.Label>
                 <Form.Control
                     type="email"
-                    placeholder="name@example.com"
+                    placeholder="Correo"
                     autoFocus
+                    id="modal-input"
                 />
+
                 </Form.Group>
                 <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea1"
+                
                 >
-                <Form.Label>Example textarea</Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Label></Form.Label>
+                <Form.Control 
+                    type="password"
+                    placeholder="Contraseña"
+                    autoFocus
+                    id="modal-input"
+                />
                 </Form.Group>
-                </Form>
-                </Modal.Body>
-                <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                </Button>
-                </Modal.Footer>
+
+                <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+                
+                >
+                <Form.Label></Form.Label>
+                <Form.Control 
+                    type="password"
+                    placeholder="Confirmar Contraseña"
+                    autoFocus
+                    id="modal-input"
+                />
+                </Form.Group>
+
+            </Form>
+            </Modal.Body>
+            <Modal.Footer id="modal-footer">
+            <Button variant="primary" onClick={handleClose} id="registrar-btn">
+                Registrar
+            </Button>
+            <p>O registrate con</p>
+            <div className="modal-footer-images">
+                <ul>
+                    <li><a href="/"> <i><SiGmail/></i> </a></li>
+                    <li><a href="/"> <i><GrFacebook/></i> </a></li>
+                </ul>
+            </div>
+            <a href="/">Iniciar Sesion</a>
+            </Modal.Footer>
         </Modal>
     </div>
   )
