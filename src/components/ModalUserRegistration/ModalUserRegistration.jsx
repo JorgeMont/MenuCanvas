@@ -36,16 +36,16 @@ function ModalUserRegistration() {
                 <Form.Label>Example textarea</Form.Label>
                 <Form.Control as="textarea" rows={3} />
                 </Form.Group>
-            </Form>
-            </Modal.Body>
-            <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-                Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-                Save Changes
-            </Button>
-            </Modal.Footer>
+                </Form>
+                </Modal.Body>
+                <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Close
+                </Button>
+                <Button variant="primary" onClick={handleClose}>
+                    Save Changes
+                </Button>
+                </Modal.Footer>
         </Modal>
     </div>
   )

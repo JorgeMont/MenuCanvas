@@ -1,6 +1,6 @@
 
 import './App.scss';
-import ModalUserRegistrationPage from './Pages/ModalUserRegistrationPage';
+import ModalUserRegistrationPage from './Pages/ModalUserRegistrationPage.jsx'
 
 
 function App() {
