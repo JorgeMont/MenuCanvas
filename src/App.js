@@ -1,10 +1,11 @@
 
 import './App.scss';
-import CreateProfilePage from './Pages/CreateProfilePage';
+import CreateMenuDishesPage from './Pages/CreateProfilePage';
+
 
 function App() {
   return <>
-    <CreateProfilePage/>
+    <CreateMenuDishesPage/>
   </>
 }
 
