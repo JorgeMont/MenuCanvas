@@ -1,7 +1,7 @@
 
 import './App.scss';
-import CreateMenuDishesPage from './Pages/CreateProfilePage';
-
+import CreateMenuDishesPage from './Pages/CreateMenuPage';
+import "./firebase" 
 
 function App() {
   return <>

@@ -2,19 +2,24 @@ import React from 'react';
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from '../components/Sidebar/Sidebar';
 import Footer from "../components/Footer/Footer";
-import CreateMenuDishes from '../components/CreateMenuDishes/CreateMenuDishes';
+import MenuEditor from '../components/MenuEditor/MenuEditor';
 
 
 
 
-const CreateMenuDishesPage = ()=> {
+
+const CreateMenuPage = ()=> {
+
+
   return <>
     <nav>
       <Navbar/>  
     </nav>
-    <div className="container-fluid d-flex 3fr 9fr p-3">
+    <div className="container-fluid d-flex 3fr 6fr p-6">
       <Sidebar className="bg-light"/>
-      <CreateMenuDishes/>  
+      <div className="container menu-editor d-flex p-4">
+        <MenuEditor/>
+      </div>
     </div>
 
      
@@ -24,4 +29,4 @@ const CreateMenuDishesPage = ()=> {
   </>
 }
 
-export default CreateMenuDishesPage
+export default CreateMenuPage
