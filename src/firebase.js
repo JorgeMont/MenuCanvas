@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import {getFirestore, collection, addDoc} from "firebase/firestore";
+import {getFirestore, collection, addDoc, getDocs, getDoc, onSnapshot, deleteDoc, doc, updateDoc} from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBZ9tl3wc62DFUD074mUeREuszxJzCwX4E",
@@ -11,12 +11,26 @@ const firebaseConfig = {
   };
 
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore()
+export const db = getFirestore(app)
 
 export const saveDish = (nombrePlatillo, precioPlatillo, descripcionPlatillo, fotoPlatillo)=>{
     addDoc(collection(db, "dishes"), {nombrePlatillo: nombrePlatillo, precioPlatillo: precioPlatillo, descripcionPlatillo: descripcionPlatillo, fotoPlatillo: fotoPlatillo})
 }
 
+export const getDish = () => getDocs(collection(db, "dishes")) 
+
+export const onGetDish = () => console.log("Getting some dishes")
+
+export const deleteDish = (id) => deleteDoc(doc(db, "dishes", id))
+
+export const editDish = (id) => getDoc(doc(db, "dishes", id))
+
+export const updateDish = (id) =>
+
+export {
+  onSnapshot,
+  collection,
+}
 
 
 
