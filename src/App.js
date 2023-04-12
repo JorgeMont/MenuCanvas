@@ -1,7 +1,7 @@
-
 import './App.scss';
-import CreateMenuDishesPage from './Pages/CreateMenuPage';
-import "./firebase" 
+import MenuEditorPage from './Pages/MenuEditorPage';
+
+
 
 
 
@@ -13,7 +13,7 @@ function App() {
 
 
   return <>
-    <CreateMenuDishesPage/>
+    <MenuEditorPage/>
   </>
 }
 
