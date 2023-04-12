@@ -25,7 +25,7 @@ export const deleteDish = (id) => deleteDoc(doc(db, "dishes", id))
 
 export const editDish = (id) => getDoc(doc(db, "dishes", id))
 
-export const updateDish = (id) =>
+export const updateDish = (id) => updateDoc()
 
 export {
   onSnapshot,

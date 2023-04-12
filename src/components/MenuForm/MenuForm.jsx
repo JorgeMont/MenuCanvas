@@ -7,7 +7,7 @@ let editStatus = false;
 
 
 function MenuForm(props) {
-    const menuFormId = document.getElementById("menu-form")
+    const menuFormId = document.getElementById("menuForm")
 
     const initialValues = 
         {
@@ -74,20 +74,20 @@ function MenuForm(props) {
           })
         })
 
-        
         const btnsEdit = dishContainer.querySelectorAll(".btn-edit")
         btnsEdit.forEach(btn=>{
             btn.addEventListener("click", async(e)=>{
                 const doc = await editDish(e.target.dataset.id)
                 const dish = doc.data()
-                menuFormId["nombre-platillo"].value = dish.nombrePlatillo;
-                menuFormId["precio-platillo"].value = dish.precioPlatillo;
-                menuFormId["descripcion-platillo"].value = dish.descripcionPlatillo;
-                menuFormId["foto-platillo"].value = dish.fotoPlatillo;
+
+               console.log(dish)
                 
                 editStatus = true;
             })
         })
+        
+
+
 
         }) 
       }
@@ -96,7 +96,7 @@ function MenuForm(props) {
   return (
     <>
       <div className="container">
-        <form className='card' onSubmit={handleSubmit} id="menu-form" >
+        <form className='card' onSubmit={handleSubmit} id="menuForm" >
 
 <div className="form-group input-group">
     <label htmlFor="nombre-menu" className='container-fluid'>Nombre del Menu</label>
@@ -117,8 +117,8 @@ function MenuForm(props) {
 
 
 <div className="form-group input-group d-flex 3f 3fr 3fr">
-<input type="text" placeholder='Nombre del Platillo' id="nombre-platillo"name="nombrePlatillo" onChange={handleInputChange}/>
-    <input type="number" placeholder='Precio Platillo' id="precio-platillo" name="precioPlatillo" onChange={handleInputChange}/>
+<input type="text" placeholder='Nombre del Platillo' id="nombrePlatillo"name="nombrePlatillo" onChange={handleInputChange}/>
+    <input type="number" placeholder='Precio Platillo' id="precioPlatillo" name="precioPlatillo" onChange={handleInputChange}/>
     <select name="categoriaPlatillo" id="categoria" onChange={handleInputChange} >
         <option value="desayuno" onChange={handleInputChange}>Desayuno</option>
         <option value="comida" onChange={handleInputChange}>comida</option>
@@ -155,6 +155,7 @@ function MenuForm(props) {
       
     </>
   )
+  
 }
 
 export default MenuForm
