@@ -3,13 +3,13 @@ import { Routes, Route } from 'react-router';
 import './App.scss';
 import CreateProfilePage from './Pages/CreateProfilePage';
 import MenuEditorPage from './Pages/MenuEditorPage';
-
+import SelectYourPlan from './Pages/SelectYourPlan';
 function App() {
   return (
   <>
     <Routes>
     <Route path='/' element = {<p>home</p>} />
-    <Route path='/planes' element = {<p>planes</p>} />
+    <Route path='/planes' element = {<SelectYourPlan />} />
     <Route path='/login' element = {<p>login</p>} />
     <Route path='/signup' element = {<p>signup</p>} />
     <Route path='/payment' element = {<p>payment</p>} />
