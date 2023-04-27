@@ -2,6 +2,7 @@
 import { Routes, Route } from 'react-router';
 import './App.scss';
 import CreateProfilePage from './Pages/CreateProfilePage';
+import MenuEditorPage from './Pages/MenuEditorPage';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
     <Route path='/dashboard' element = {<p>dashboard</p>} />
     <Route path='/edit/:idplatillo' element = {<p>edit</p>} />
     <Route path='/my_qr' element = {<p>my_qr</p>} />
-    <Route path='/create_menu' element = {<p>create_menu</p>} />
+    <Route path='/create_menu' element = {<MenuEditorPage />} />
     <Route path='/suscription' element = {<p>suscription</p>} />
     <Route path='/profile' element = {<CreateProfilePage />} />
     </Routes>
