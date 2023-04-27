@@ -80,7 +80,7 @@ function MenuEditor() {
           <div className="preview-container p-1">
             <h6>Previsualizacion del Menu</h6>
             <div className="menu-preview">
-              <h6 class="categoria-preview">DESAYUNOS</h6>
+              <h6 className="categoria-preview">DESAYUNOS</h6>
               <div className="card-container">
                 <div className='card d-flex row'>
                   <div className="card-body">
@@ -114,7 +114,7 @@ function MenuEditor() {
                     <div className="card-text">Esta seria la descripcion del Platillo un platillo exquisito, digno de deleitar las papilas</div>
                   </div>
                 </div>
-                <h6 class="categoria-preview">DESAYUNOS</h6>
+                <h6 className="categoria-preview">DESAYUNOS</h6>
                 <div className='card d-flex row'>
                   <div className="card-body">
                     <div className="d-flex platillo">

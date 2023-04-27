@@ -17,23 +17,23 @@ function Footer() {
       <div className="nosotros col-3" id="nosotros">
         <h6>Nosotros</h6>
         <ul>
-          <li><a href="/" class="footer-list">Origen</a></li>
-          <li><a href="/" class="footer-list">El Equipo</a></li>
-          <li><a href="/" class="footer-list">Terminos y Condiciones</a></li>
+          <li><a href="/" className="footer-list">Origen</a></li>
+          <li><a href="/" className="footer-list">El Equipo</a></li>
+          <li><a href="/" className="footer-list">Terminos y Condiciones</a></li>
         </ul>
       </div>
       <div className="servicios col-3">
         <h6>Servicios</h6>
         <ul>
-          <li><a href="/" class="footer-list">Menu</a></li>
-          <li><a href="/" class="footer-list">Nuestro Producto</a></li>
+          <li><a href="/" className="footer-list">Menu</a></li>
+          <li><a href="/" className="footer-list">Nuestro Producto</a></li>
         </ul>
       </div>
       <div className="otros col-3">
         <h6>Otros</h6>
         <ul>
-          <li><a href="/" class="footer-list">Contacto</a></li>
-          <li><a href="/" class="footer-list">Ayuda</a></li>
+          <li><a href="/" className="footer-list">Contacto</a></li>
+          <li><a href="/" className="footer-list">Ayuda</a></li>
         </ul>
       </div>
     </div>
