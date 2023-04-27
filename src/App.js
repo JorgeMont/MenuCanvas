@@ -4,6 +4,7 @@ import './App.scss';
 import CreateProfilePage from './Pages/CreateProfilePage';
 import MenuEditorPage from './Pages/MenuEditorPage';
 import SelectYourPlan from './Pages/SelectYourPlan';
+import SuscriptionPage from './Pages/SuscriptionPage';
 function App() {
   return (
   <>
@@ -18,7 +19,7 @@ function App() {
     <Route path='/edit/:idplatillo' element = {<p>edit</p>} />
     <Route path='/my_qr' element = {<p>my_qr</p>} />
     <Route path='/create_menu' element = {<MenuEditorPage />} />
-    <Route path='/suscription' element = {<p>suscription</p>} />
+    <Route path='/suscription' element = {<SuscriptionPage /> } />
     <Route path='/profile' element = {<CreateProfilePage />} />
     </Routes>
   </>
