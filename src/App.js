@@ -8,7 +8,7 @@ import Sections from './components/Sections/Sections';
 function App() {
   return <>
     <CreateProfilePage/>
-
+    
     <Sections/>
   </>
 }
