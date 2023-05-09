@@ -4,8 +4,10 @@ import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Footer from "../components/Footer/Footer";
 import { CreateProfileRestaurant } from "../components/CreateProfileRestaurant/CreateProfileRestaurant";
+import CreateRestaurant from "../components/CreateProfileRestaurant/CreateRestaurant";
+import CreateProfile2 from "../components/CreateProfile/2CreateProfile";
 
-function CreateProfilePage() {
+function CreateProfileTest() {
   return (
     <>
       <nav>
@@ -13,9 +15,7 @@ function CreateProfilePage() {
       </nav>
       <div className="container-fluid d-flex 3fr 9fr p-3">
         <Sidebar className="bg-light" />
-        <CreateProfile />
-        <div style={{ width: 5000 }}></div>
-        <CreateProfileRestaurant />
+        <CreateProfile2 />
       </div>
 
       <footer className="container-fluid d-flex 3fr 3fr 3fr 3fr">
@@ -25,4 +25,4 @@ function CreateProfilePage() {
   );
 }
 
-export default CreateProfilePage;
+export default CreateProfileTest;
