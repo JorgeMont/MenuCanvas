@@ -4,13 +4,14 @@ import './App.scss';
 import CreateProfilePage from './Pages/CreateProfilePage';
 import MenuEditorPage from './Pages/MenuEditorPage';
 import SelectYourPlan from './Pages/SelectYourPlan';
+import ModalUserRegistrationPage from './Pages/ModalUserRegistrationPage';
 function App() {
   return (
   <>
     <Routes>
     <Route path='/' element = {<p>home</p>} />
     <Route path='/planes' element = {<SelectYourPlan />} />
-    <Route path='/login' element = {<p>login</p>} />
+    <Route path='/login' element = {<ModalUserRegistrationPage/>} />
     <Route path='/signup' element = {<p>signup</p>} />
     <Route path='/payment' element = {<p>payment</p>} />
     <Route path='/purchase' element = {<p>purchase</p>} />
