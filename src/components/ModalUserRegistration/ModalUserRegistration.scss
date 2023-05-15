@@ -4,6 +4,12 @@
     //height: 100vh;
 }
 
+.userRegistracion__form{
+    border: 1px solid #d4d4d4;
+    margin: 2rem auto;
+    padding: 2rem 4rem;
+}
+
 /*
 #complete-modal{
     border-radius: none;
@@ -14,7 +20,7 @@
     }
     #modal-input{
         border-radius: 0;
-        width: 300px;
+        width: 350px;
         margin-left: 3.5rem;
         margin-bottom: -1.5rem;
         
@@ -97,7 +103,7 @@ $exito : #1ed12d;
 
 #IconoValidacion{
     position: absolute;
-    right: 30px;
+    right: 20px;
     color: $exito;
     
     z-index: 100;

@@ -75,9 +75,9 @@ function ModalUserRegistration() {
     } = useForm(initialForm, validationsForm);
 
 
-  return (
-    <div>   
-
+  return (<>
+    <div className="userRegistracion__form">   
+        <h1>Crea una cuenta</h1>   
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Label></Form.Label>
@@ -123,24 +123,24 @@ function ModalUserRegistration() {
                 {errors.apellido && <p id='MensajeError'> {errors.apellido} </p>}
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
-                <Form.Label></Form.Label>
-                <div>
-                <Form.Control
-                    type="email"
-                    name='email'
-                    placeholder="Correo"
-                    onBlur={handleBlur}
-                    onChange={handleChange}
-                    onKeyUp={handleBlur}
-                    value={form.email}
-                    required
-                    //autoFocus
-                    id="modal-input"
-                />
+                    <Form.Label></Form.Label>
+                    <div>
+                    <Form.Control
+                        type="email"
+                        name='email'
+                        placeholder="Correo"
+                        onBlur={handleBlur}
+                        onChange={handleChange}
+                        onKeyUp={handleBlur}
+                        value={form.email}
+                        required
+                        //autoFocus
+                        id="modal-input"
+                    />
                 
                 
-                {!errors.email && form.email.length !==0 && <BsFillCheckCircleFill id="IconoValidacion"/>}
-                </div>               
+                    {!errors.email && form.email.length !==0 && <BsFillCheckCircleFill id="IconoValidacion"/>}
+                    </div>               
                 </Form.Group>
                 {errors.email && <p id='MensajeError'> {errors.email} </p>}
 
@@ -218,10 +218,11 @@ function ModalUserRegistration() {
                     <li><a href="/"> <i><GrFacebook/></i> </a></li>
                 </ul>
             </div>
-            <a href="/">Iniciar Sesion</a>
+            
             </Modal.Footer>
      
     </div>
+    </>
   )
 }
 
